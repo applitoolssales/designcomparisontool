@@ -20,7 +20,7 @@ public class BrowserTester {
     RemoteWebDriver driver;
     Eyes eyes;
     VisualGridRunner runner;
-    static BatchInfo batch = new BatchInfo(System.getProperty("BuildName"));
+    static BatchInfo batch = new BatchInfo("Build #" + System.getProperty("BuildName"));
 
     String[][] urls = {
            // {"Capital One - Homepage", "https://www.capitalone.com", ""},
