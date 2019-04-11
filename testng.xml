@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Browser Comparison Tester" parallel="tests">
+    <parameter name="visualgrid" value="false"/>
+<!--
+    <test name="Chrome Windows 10">
+        <parameter name="targetEnvironment" value="Chrome Windows 10" />
+        <parameter name="useSauce" value="True" />
+        <parameter name="platform" value="Windows 10" />
+        <parameter name="version" value="72.0" />
+        <classes>
+            <class name="BrowserTester" />
+        </classes>
+    </test>
+
+        <test name="Chrome Windows 7">
+            <parameter name="targetEnvironment" value="Chrome Windows 7" />
+            <parameter name="useSauce" value="True" />
+            <parameter name="platform" value="Windows 7" />
+            <parameter name="version" value="72.0" />
+            <classes>
+                <class name="BrowserTester" />
+            </classes>
+        </test>
+
+        <test name="Chrome Windows 8.1">
+            <parameter name="targetEnvironment" value="Chrome Windows 8.1" />
+            <parameter name="useSauce" value="True" />
+            <parameter name="platform" value="Windows 8.1" />
+            <parameter name="version" value="72.0" />
+            <classes>
+                <class name="BrowserTester" />
+            </classes>
+        </test>
+
+
+-->
+
+    <test name="Chrome Linux">
+        <parameter name="targetEnvironment" value="Chrome Linux" />
+        <parameter name="useSauce" value="False" />
+        <parameter name="platform" value="Linux" />
+        <parameter name="version" value="73.0.3683.86" />
+        <classes>
+            <class name="BrowserTester" />
+        </classes>
+    </test>
+
+
+<!--
+
+    <test name="Chrome macOS 10.14">
+        <parameter name="targetEnvironment" value="Chrome macOS 10.14" />
+        <parameter name="useSauce" value="True" />
+        <parameter name="platform" value="macOS 10.14" />
+        <parameter name="version" value="72.0" />
+        <classes>
+            <class name="BrowserTester" />
+        </classes>
+    </test>
+
+    <test name="Chrome macOS 10.13">
+        <parameter name="targetEnvironment" value="Chrome macOS 10.13" />
+        <parameter name="useSauce" value="True" />
+        <parameter name="platform" value="macOS 10.13" />
+        <parameter name="version" value="72.0" />
+        <classes>
+            <class name="BrowserTester" />
+        </classes>
+    </test>
+
+    <test name="Chrome macOS 10.12">
+        <parameter name="targetEnvironment" value="Chrome macOS 10.12" />
+        <parameter name="useSauce" value="True" />
+        <parameter name="platform" value="macOS 10.12" />
+        <parameter name="version" value="72.0" />
+        <classes>
+            <class name="BrowserTester" />
+        </classes>
+    </test>
+-->
+
+</suite>
