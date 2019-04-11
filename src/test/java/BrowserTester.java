@@ -131,8 +131,7 @@ public class BrowserTester {
         for (int i = 0; i < urls.length; i++) {
             driver.get(urls[i][1]);
             //eyes.checkWindow(urls[i][0]);
-
-
+            
             if(!urls[i][2].equals("")){
                 //SeleniumCheckSettings s = Target.window();
                 //s.fully();
