@@ -20,7 +20,7 @@ public class BrowserTester {
     RemoteWebDriver driver;
     Eyes eyes;
     VisualGridRunner runner;
-    static BatchInfo batch = new BatchInfo("Bad Resolution Test");
+    static BatchInfo batch = new BatchInfo(System.getProperty("BuildName"));
 
     String[][] urls = {
            // {"Capital One - Homepage", "https://www.capitalone.com", ""},
@@ -130,7 +130,7 @@ public class BrowserTester {
     public void BrowserTester() throws InterruptedException {
         for (int i = 0; i < urls.length; i++) {
             driver.get(urls[i][1]);
-            eyes.checkWindow(urls[i][0]);
+            //eyes.checkWindow(urls[i][0]);
 
 
             if(!urls[i][2].equals("")){
