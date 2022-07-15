@@ -4,64 +4,49 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>BrowserComparisonTester</groupId>
-    <artifactId>BrowserComparisonTester</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>Applitools</groupId>
+    <artifactId>ApplitoolsDesignComparisonTool</artifactId>
+    <version>1.0</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
-
-
-        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <!-- https://search.maven.org/artifact/org.testng/testng/ -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.0.0-beta3</version>
-            <scope>test</scope>
+            <version>7.6.1</version>
         </dependency>
 
-
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-remote-driver</artifactId>
-            <version>RELEASE</version>
-            <scope>test</scope>
-        </dependency>
-<!--
-        <dependency>
-            <groupId>io.appium</groupId>
-            <artifactId>java-client</artifactId>
-            <version>RELEASE</version>
-        </dependency>
--->
+        <!-- https://search.maven.org/artifact/com.applitools/eyes-selenium-java5 -->
         <dependency>
             <groupId>com.applitools</groupId>
-            <artifactId>eyes-selenium-java3</artifactId>
-            <version>RELEASE</version>
-            <scope>test</scope>
-
+            <artifactId>eyes-selenium-java5</artifactId>
+            <version>5.12.0</version>
         </dependency>
 
+        <!-- https://search.maven.org/artifact/net.sourceforge.jexcelapi/jxl -->
+        <dependency>
+            <groupId>net.sourceforge.jexcelapi</groupId>
+            <artifactId>jxl</artifactId>
+            <version>2.6.12</version>
+        </dependency>
 
-
-
+        <!-- https://search.maven.org/artifact/org.slf4j/slf4j-simple -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>RELEASE</version>
-            <scope>test</scope>
+            <version>1.7.36</version>
         </dependency>
 
+        <!-- https://search.maven.org/artifact/org.json/json -->
         <dependency>
-            <groupId>javax.activation</groupId>
-            <artifactId>activation</artifactId>
-            <version>1.1.1</version>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20220320</version>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -69,17 +54,17 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.0</version>
+                <version>3.8.1</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>12</source>
+                    <target>12</target>
                 </configuration>
             </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.18.1</version>
+                <version>2.22.2</version>
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>

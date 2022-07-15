@@ -1,83 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" name="Browser Comparison Tester" parallel="tests">
-    <parameter name="visualgrid" value="false"/>
-<!--
-    <test name="Chrome Windows 10">
-        <parameter name="targetEnvironment" value="Chrome Windows 10" />
-        <parameter name="useSauce" value="True" />
-        <parameter name="platform" value="Windows 10" />
-        <parameter name="version" value="72.0" />
+<suite thread-count="1" name="Applitools Design Comparison Tool" parallel="tests" data-provider-thread-count="1">
+    <!-- GLOBAL CONFIG -->
+
+    <parameter name="APIKey" value=""/>
+
+
+    <!-- SetBaselines | ValidateDesigns | RunChecks -->
+    <parameter name="Mode" value="RunChecks"/>
+
+    <parameter name="BatchName" value="Test Batch"/>
+    <parameter name="AppName" value="12"/>
+    <parameter name="DesignSource" value="URL"/>
+    <parameter name="ImageLoaderBaseURL" value=""/>
+
+    <parameter name="WaitBeforeScreenshots" value="0" />
+
+    <!-- Local Execution Config -->
+    <parameter name="ChromeDriverLocation" value="C:/selenium/chromedriver.exe"/>
+    <parameter name="GeckoDriverLocation" value="C:/selenium/geckodriver.exe"/>
+    <parameter name="LocalBrowserToUse" value="Chrome"/>
+    <parameter name="LocalViewportSize" value="1200x600"/>
+
+    <!-- Cross Browser Config -->
+    <parameter name="CrossBrowser" value="true"/>
+    <parameter name="Browsers" value="Chrome;Chrome-1;Firefox;Firefox-1"/>
+    <parameter name="Viewports" value="1200x800;800x600"/>
+
+    <test name="Design Comparison">
         <classes>
-            <class name="BrowserTester" />
+            <class name="DesignComparison" />
         </classes>
     </test>
-
-        <test name="Chrome Windows 7">
-            <parameter name="targetEnvironment" value="Chrome Windows 7" />
-            <parameter name="useSauce" value="True" />
-            <parameter name="platform" value="Windows 7" />
-            <parameter name="version" value="72.0" />
-            <classes>
-                <class name="BrowserTester" />
-            </classes>
-        </test>
-
-        <test name="Chrome Windows 8.1">
-            <parameter name="targetEnvironment" value="Chrome Windows 8.1" />
-            <parameter name="useSauce" value="True" />
-            <parameter name="platform" value="Windows 8.1" />
-            <parameter name="version" value="72.0" />
-            <classes>
-                <class name="BrowserTester" />
-            </classes>
-        </test>
-
-
--->
-
-    <test name="Chrome Linux">
-        <parameter name="targetEnvironment" value="Chrome Linux" />
-        <parameter name="useSauce" value="False" />
-        <parameter name="platform" value="Linux" />
-        <parameter name="version" value="73.0.3683.86" />
-        <classes>
-            <class name="BrowserTester" />
-        </classes>
-    </test>
-
-
-<!--
-
-    <test name="Chrome macOS 10.14">
-        <parameter name="targetEnvironment" value="Chrome macOS 10.14" />
-        <parameter name="useSauce" value="True" />
-        <parameter name="platform" value="macOS 10.14" />
-        <parameter name="version" value="72.0" />
-        <classes>
-            <class name="BrowserTester" />
-        </classes>
-    </test>
-
-    <test name="Chrome macOS 10.13">
-        <parameter name="targetEnvironment" value="Chrome macOS 10.13" />
-        <parameter name="useSauce" value="True" />
-        <parameter name="platform" value="macOS 10.13" />
-        <parameter name="version" value="72.0" />
-        <classes>
-            <class name="BrowserTester" />
-        </classes>
-    </test>
-
-    <test name="Chrome macOS 10.12">
-        <parameter name="targetEnvironment" value="Chrome macOS 10.12" />
-        <parameter name="useSauce" value="True" />
-        <parameter name="platform" value="macOS 10.12" />
-        <parameter name="version" value="72.0" />
-        <classes>
-            <class name="BrowserTester" />
-        </classes>
-    </test>
--->
-
 </suite>
