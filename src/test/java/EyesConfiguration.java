@@ -48,9 +48,8 @@ public class EyesConfiguration {
                 .setWaitBeforeScreenshots(Integer.parseInt(util.getParam("WaitBeforeScreenshots")))
                 .setLayoutBreakpoints(true)
                 .setViewportSize(util.translateViewport(util.getParam("LocalViewportSize")))
-                .setSendDom(true);
-
-        conf.setIsDisabled(util.getConfigBool("DisableEyes") == null ? false: true);
+                .setSendDom(true)
+                .setIsDisabled(util.getConfigBool("DisableEyes") == null ? false: util.getConfigBool("DisableEyes"));
 
         if(runnerType.equals(RunnerType.UFG)){
             String[] browsers = util.deserializeParam("Browsers");
