@@ -50,6 +50,8 @@ public class EyesConfiguration {
                 .setViewportSize(util.translateViewport(util.getParam("LocalViewportSize")))
                 .setSendDom(true);
 
+        conf.setIsDisabled(util.getConfigBool("DisableEyes") == null ? false: true);
+
         if(runnerType.equals(RunnerType.UFG)){
             String[] browsers = util.deserializeParam("Browsers");
             String[] viewports = util.deserializeParam("Viewports");
