@@ -12,7 +12,7 @@
     <parameter name="BatchName" value="Test Batch"/>
     <parameter name="AppName" value="12"/>
     <parameter name="DesignSource" value="URL"/>
-    <parameter name="ImageLoaderBaseURL" value=""/>
+    <parameter name="ImageLoaderBaseURL" value="http://localhost:9000/loadimage.html"/>
 
     <parameter name="WaitBeforeScreenshots" value="0" />
 
