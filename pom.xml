@@ -20,6 +20,7 @@
             <version>7.6.1</version>
         </dependency>
 
+        <!-- https://search.maven.org/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
