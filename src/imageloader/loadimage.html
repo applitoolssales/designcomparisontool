@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Image Loader</title>
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+
+	<style>
+	body, img {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+	}
+	</style>
+
+</head>
+
+<body>
+  <img id="designImage" />
+
+  <script>
+  
+
+   
+	let imageSrc = getUrlParam('src', '');
+	document.getElementById('designImage').src = imageSrc;
+
+    
+
+
+  function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+      vars[key] = value;
+    });
+    return vars;
+  }
+
+  function getUrlParam(parameter, defaultValue){
+    var urlParameter = defaultValue;
+    if(window.location.href.indexOf(parameter) > -1){
+      urlParameter = getUrlVars()[parameter];
+    }
+    return urlParameter;
+  }
+
+ 
+
+  </script>
+</body>
+
+</html>
