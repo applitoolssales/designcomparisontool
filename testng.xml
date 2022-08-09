@@ -3,6 +3,7 @@
 <suite thread-count="1" name="Applitools Design Comparison Tool" parallel="tests" data-provider-thread-count="1">
     <!-- GLOBAL CONFIG -->
 
+    <parameter name="ServerURL" value="https://acmeeyesapi.applitools.com"/>
     <parameter name="APIKey" value=""/>
 
 
@@ -10,11 +11,8 @@
     <parameter name="Mode" value="RunChecks"/>
 
     <parameter name="BatchName" value="Test Batch"/>
-    <parameter name="AppName" value="12"/>
-    <parameter name="DesignSource" value="URL"/>
+    <parameter name="AppName" value="Resulta"/>
     <parameter name="ImageLoaderBaseURL" value="http://localhost:9000/loadimage.html"/>
-
-    <parameter name="WaitBeforeScreenshots" value="0" />
 
     <!-- Local Execution Config -->
     <parameter name="ChromeDriverLocation" value="C:/selenium/chromedriver.exe"/>

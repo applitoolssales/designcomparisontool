@@ -42,7 +42,11 @@ public class Utility {
     }
 
     String[] deserializeParam(String param){
-        return getParam(param).split(";");
+        String[] cleanedStringArray = getParam(param).split(";");
+        for (int i = 0; i < cleanedStringArray.length; i++) {
+            cleanedStringArray[i] = cleanedStringArray[i].trim();
+        }
+        return cleanedStringArray;
     }
 
 }

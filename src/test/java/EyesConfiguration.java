@@ -37,6 +37,7 @@ public class EyesConfiguration {
         Utility util = new Utility(params);
 
         conf
+                .setServerUrl(util.getParam("ServerURL"))
                 .setTestName(testName)
                 .setAppName(util.getParam("AppName"))
                 .setApiKey(util.getParam("APIKey"))
@@ -45,7 +46,6 @@ public class EyesConfiguration {
                 .setForceFullPageScreenshot(true)
                 .setStitchMode(StitchMode.CSS)
                 .setMatchLevel(MatchLevel.STRICT)
-                .setWaitBeforeScreenshots(Integer.parseInt(util.getParam("WaitBeforeScreenshots")))
                 .setLayoutBreakpoints(true)
                 .setViewportSize(util.translateViewport(util.getParam("LocalViewportSize")))
                 .setSendDom(true)
@@ -90,6 +90,9 @@ public class EyesConfiguration {
                         break;
                     case "EDGE-1":
                         browserList.add(BrowserType.EDGE_CHROMIUM_ONE_VERSION_BACK);
+                        break;
+                    case "EDGE-2":
+                        browserList.add(BrowserType.EDGE_CHROMIUM_TWO_VERSION_BACK);
                         break;
                 }
             }
