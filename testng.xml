@@ -12,7 +12,7 @@
     <parameter name="DesignSource" value="URL"/>
     <parameter name="ImageLoaderBaseURL" value="http://localhost:9000/loadimage.html"/>
     <parameter name="ImageDir" value="/images/"/>
-    <parameter name="ExcelDataFile" value="/Users/christopheremerson/Projects/designcomparisontool/src/data/DesignComparisonConfig.xls"/>
+    <parameter name="ExcelDataFile" value="../src/data/DesignComparisonConfig.xls"/>
 
     <parameter name="WaitBeforeScreenshots" value="0" />
 
