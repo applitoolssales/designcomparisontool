@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="1" name="Applitools Design Comparison Tool" parallel="tests" data-provider-thread-count="1">
     <!-- GLOBAL CONFIG -->
-
+    <parameter name="EyesServerUrl" value="https://eyes.applitools.com"/>
     <parameter name="APIKey" value=""/>
 
 
@@ -10,14 +10,16 @@
     <parameter name="Mode" value="RunChecks"/>
 
     <parameter name="BatchName" value="Test Batch"/>
-    <parameter name="AppName" value="12"/>
+    <parameter name="AppName" value="16"/>
     <parameter name="DesignSource" value="URL"/>
     <parameter name="ImageLoaderBaseURL" value="http://localhost:9000/loadimage.html"/>
+    <parameter name="ImageDir" value="/images/"/>
+    <parameter name="ExcelDataFile" value="/Users/christopheremerson/Projects/designcomparisontool/src/data/DesignComparisonConfig.xls"/>
 
     <parameter name="WaitBeforeScreenshots" value="0" />
 
     <!-- Local Execution Config -->
-    <parameter name="ChromeDriverLocation" value="C:/selenium/chromedriver.exe"/>
+    <parameter name="ChromeDriverLocation" value="/usr/local/bin/chromedriver"/>
     <parameter name="GeckoDriverLocation" value="C:/selenium/geckodriver.exe"/>
     <parameter name="LocalBrowserToUse" value="Chrome"/>
     <parameter name="LocalViewportSize" value="1200x600"/>

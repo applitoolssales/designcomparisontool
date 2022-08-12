@@ -40,6 +40,7 @@ public class EyesConfiguration {
                 .setTestName(testName)
                 .setAppName(util.getParam("AppName"))
                 .setApiKey(util.getParam("APIKey"))
+                .setServerUrl(util.getParam("EyesServerUrl"))
                 .setBatch(batch)
                 .setHideScrollbars(true)
                 .setForceFullPageScreenshot(true)
