@@ -126,7 +126,7 @@ public class DesignComparison {
         if(execute){
             switch(mode){
                 case SET_BASELINES:
-                    String imageLoaderURL = util.getParam("ImageLoaderBaseURL") + "?src=" + localImageName;
+                    String imageLoaderURL = util.getParam("ImageLoaderBaseURL") + "?src=" + util.getParam("ImageDir") + localImageName;
                     openTest(testName, RunnerType.CLASSIC, CheckType.BASELINE);
                     driver.get(imageLoaderURL);
                     eyes.check(Target.window().fully(true));
@@ -179,7 +179,9 @@ public class DesignComparison {
 
     @DataProvider(name = "data", parallel = false)
     private Object[][] getData() throws FileNotFoundException {
-        Object[][] arrayObject = getExcelData(System.getProperty("user.dir") + "//src//data//DesignComparisonConfig.xls","Data");
+
+        Object[][] arrayObject = getExcelData(util.getParam("ExcelDataFile"), "Data");
+
         return arrayObject;
     }
 
