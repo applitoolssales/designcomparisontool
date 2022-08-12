@@ -14,7 +14,7 @@
     <parameter name="AppName" value="Resulta"/>
     <parameter name="ImageDir" value="/images/"/>
     <parameter name="ImageLoaderBaseURL" value="http://localhost:9000/loadimage.html"/>
-    <parameter name="ExcelDataFile" value="../src/data/DesignComparisonConfig.xls"/>
+    <parameter name="ExcelDataFile" value="src/data/DesignComparisonConfig.xls"/>
 
     <!-- Local Execution Config -->
     <parameter name="ChromeDriverLocation" value="C:/selenium/chromedriver.exe"/>
