@@ -12,6 +12,7 @@
 
     <parameter name="BatchName" value="Test Batch"/>
     <parameter name="AppName" value="Resulta"/>
+    <parameter name="ImageDir" value="/images/"/>
     <parameter name="ImageLoaderBaseURL" value="http://localhost:9000/loadimage.html"/>
 
     <!-- Local Execution Config -->
