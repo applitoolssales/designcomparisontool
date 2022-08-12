@@ -2,9 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="1" name="Applitools Design Comparison Tool" parallel="tests" data-provider-thread-count="1">
     <!-- GLOBAL CONFIG -->
-    <parameter name="EyesServerUrl" value="https://eyes.applitools.com"/>
     <parameter name="APIKey" value=""/>
-
 
     <!-- SetBaselines | ValidateDesigns | RunChecks -->
     <parameter name="Mode" value="RunChecks"/>
